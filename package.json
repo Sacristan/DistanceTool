@@ -1,0 +1,16 @@
+{
+    "name": "com.sacristan.distancetool",
+    "version": "0.1.0",
+    "displayName": "Distance Tool",
+    "description": "Simple distance Tool",
+    "unity": "2018.1",
+    "keywords": [
+        "Distance",
+        "Measuring"
+    ],
+    "author": {
+        "name": "Ģirts 'Sacristan' Ķesteris",
+        "email": "girts.kesteris@gmail.com",
+        "url": "https://girtskesteris.xyz"
+    }
+}
