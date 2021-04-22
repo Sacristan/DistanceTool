@@ -16,6 +16,7 @@ namespace Sacristan.DistanceTool.Runtime
         public float gizmoRadius = 0.1f;
         public bool scaleToPixels = false;
         public int pixelPerUnit = 128;
+        public bool showPoints = false;
 
         void OnDrawGizmosSelected()
         {

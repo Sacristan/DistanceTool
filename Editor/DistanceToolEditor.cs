@@ -55,8 +55,19 @@ namespace Sacristan.DistanceTool._Editor
 
             _target.scaleToPixels = EditorGUILayout.Toggle("Show scale/pixel", _target.scaleToPixels, GUILayout.ExpandWidth(false));
 
-            _target.pixelPerUnit = EditorGUILayout.IntField("pixels per unit", _target.pixelPerUnit, GUILayout.ExpandWidth(false));
+            _target.pixelPerUnit = EditorGUILayout.IntField("Pixels per unit", _target.pixelPerUnit, GUILayout.ExpandWidth(false));
 
+            EditorGUILayout.EndVertical();
+
+            EditorGUILayout.BeginVertical();
+
+            _target.showPoints = EditorGUILayout.Foldout(_target.showPoints, "Points");
+
+            if (_target.showPoints)
+            {
+                _target.startPoint = EditorGUILayout.Vector3Field("start", _target.startPoint);
+                _target.endPoint = EditorGUILayout.Vector3Field("end", _target.endPoint);
+            }
             EditorGUILayout.EndVertical();
 
             //update and redraw:
